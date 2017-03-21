@@ -57,7 +57,7 @@ aside{
 }
 aside div{
 	text-align: center;
-	margin: 40px;
+	/*margin: 40px;*/
 	border-bottom: 1px solid white;
 }
 aside div a{
