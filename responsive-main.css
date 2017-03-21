@@ -50,6 +50,10 @@
     main{
         flex-direction: column-reverse;
     }
+    main section#site-description {
+        order: 2;
+    }
+
     main>section{
         width: 100%;
     }
@@ -65,11 +69,31 @@
     }
 }
 @media screen and (max-width: 480px) {
+    main section#site-description{
+        font-size: 18px;
+        width: 100%;
+        flex: 1;
+    }main section#site-description {
+         font-size: 10px;
+         flex-wrap: wrap;
+         padding: 5px;
+     }
 
 }
 @media screen and (max-width: 320px) {
     main>section>article{
         width: 300px;
+    }
+    main section#site-description {
+        font-size: 10px;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+    main section#site-description p{
+        width: 100%;
+    }
+    main section#site-description ol{
+        width: 100%;
     }
     main>section>article img{
         width: 100%;

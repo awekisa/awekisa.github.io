@@ -17,6 +17,28 @@ main{
 
 }
 
+main section#site-description{
+    padding: 50px 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    transition:1.5s 0.3s;
+}
+main section#site-description:hover{
+    transform: rotateY(360deg);
+}
+
+main section#site-description p{
+    margin-bottom: 30px;
+}
+main section#site-description ol{
+    margin: 0 auto;
+}
+
+
 main section{
     flex: 4;
     display: flex;
