@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+body{
+	font-family: 'Bad Script';
+	margin: 0px;
+}
+
+main{
+	padding: 20px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+}
+
+section{
+	flex: 2;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+article{
+	width: 370px;
+	margin: 20px;
+	text-align: center;
+}
+section article img{
+	float: left;clear:none;    /*removes whitespace*/
+	width: 370px;
+	height: 300px;
+	margin: 0 auto;
+
+}
+article div{
+	float: left;clear:none; /*removes whitespace*/
+	width: 100%;
+	text-align: center;
+	display: block;
+	background: lightblue;
+	margin: 0;
+
+}
+article div h1{
+	margin: 0px;
+}
+article img:hover div {
+	display: block;
+	background-color: black;
+}
+
+
+aside{
+	background-color: lightblue;
+	flex: 1;
+	margin-right: 30px;
+}
+aside div{
+	text-align: center;
+	margin: 40px;
+	border-bottom: 1px solid white;
+}
+aside div a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+}
+aside div a:hover{
+	color: chocolate;
+}

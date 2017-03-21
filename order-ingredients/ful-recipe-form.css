@@ -1,0 +1,86 @@
+body{
+    background:url("tablecloth.jpg");
+    width: 100%;
+}
+.form{
+    background: #FFFFFF;
+    border-radius: 50px;
+    margin: 15px auto;
+    width: 50%;
+    height: 600px;
+    align-items: center;
+    box-shadow: 10px 10px 30px #888888;
+    overflow: hidden;
+}
+h1{
+    color: darkred;
+    text-align: center;
+    margin: 10px 0 10px;
+    font-size: 30px;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+.ingredients{
+    margin: auto;
+    border-top: 2px solid #e55451;
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.column-1, .column-2{
+    list-style: none;
+    margin: 20px;
+}
+.ingredients ul li{
+    margin: 10px;
+    font-size: 18px;
+}
+.cooking-steps{
+    margin: auto;
+    border-top: 2px solid #e55451;
+    width: 80%;
+}
+.cooking-steps ol{
+    margin-left: 40px;
+    margin-top: 20px;
+    list-style: upper-roman;
+}
+.cooking-steps ol li{
+    margin-top: 10px;
+
+}
+.prep-time{
+    margin: 30px auto 5px;
+    width: 60%;
+    border: 2px solid #e55451;
+    background: #e55451;
+    border-radius:15px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+input{
+    margin-right:5px;
+}
+@media all and (max-width:890px){
+    .form{
+        width: 75%;
+        overflow: auto;
+    }
+}
+@media all and (max-width:590px){
+    .form{
+        width: 90%;
+
+    }
+}
+@media all and (max-width:480px){
+    .cooking-steps ol{
+        margin-left: 0;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}

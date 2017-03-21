@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body{
+    font-family: 'Bad Script';
+    margin: 0px;
+
+}
+
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+
+main section{
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main article{
+    box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.59);
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    background: lightblue;
+}
+main section article img{
+    float: left;clear:none;    /*removes whitespace*/
+    width: 300px;
+    height: 240px;
+    margin: 0 auto;
+
+}
+main article div{
+    float: left;clear:none; /*removes whitespace*/
+    width: 100%;
+    text-align: center;
+    display: block;
+    background: lightblue;
+    margin: 0;
+
+}
+main article div a{
+    margin: 0px;
+}
+main article img:hover div {
+    display: block;
+    background-color: black;
+}
+
+
+main aside{
+
+    background-color: lightblue;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+main aside div{
+    text-align: center;
+    margin: 40px;
+    border-bottom: 1px solid white;
+}
+main aside div a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+main aside div a:hover{
+    color: chocolate;
+}
+
+
+

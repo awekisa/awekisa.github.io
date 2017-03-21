@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+body{
+	font-family: 'Bad Script', sans-serif;
+	margin: 0px;	
+}
+.site-header img{
+	/*position: absolute;*/
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 300px;
+}
+.motto{
+	position: absolute;
+	top: 200px;
+	left: 40px;
+}
+.motto h1{
+	font-size: 4vw;
+	height: 100%;
+	font-style: italic;
+	color: #993D34;
+	--text-shadow: 2px 2px #3F0C00;
+}
+
+.nav-bar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right:0;
+	background:#EAE9EC;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow:row nowrap;
+	justify-content: space-around;
+	overflow: visible;
+}
+.site-title{
+	margin: 0 10px;
+	padding-bottom: 0;
+	text-decoration: none;
+	color: red;
+	font-weight: bolder;
+	font-size: 30px;
+	letter-spacing: 5px;
+	text-shadow: 2px 2px black;
+}
+.search{
+	margin-top:10px ;
+	margin-bottom: 5px ;
+
+}
+.reg-log-wrapper{
+	margin-top: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	position: relative;
+}
+.reg-log-wrapper a{
+	text-decoration: none;
+	margin: 5px;
+}
+.reg-log-wrapper a:hover{
+	border-bottom:5px solid  #993D34;
+	color: #993D34;
+}
+.falling-menu{
+	margin: 15px 43px 5px 15px;
+	position: relative;
+}
+.falling-menu:hover ul{
+	cursor: pointer;
+	color:  #993D34;
+	display: block;
+}
+.falling-menu i{
+	font-size: 24px;
+	cursor: pointer;
+	color:#C0CA8F;
+}
+.falling-menu ul{
+	display: none;
+	position:absolute ;
+	background: #EAE9EC;
+	right:-45px;
+	top:31px;
+}
+.falling-menu ul li{
+	list-style: none;
+	padding: 5px 10px;
+	text-align: center;
+}
+.falling-menu ul li:hover{
+	background: white;
+	font-weight: bold;
+}
+.falling-menu ul li a{
+	text-decoration: none;
+	font-size: 18px;
+}
+.search input[type="text"]{
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: 2px solid #C0CA8F;
+}
+.fa-search{
+	font-size: 18px;
+	position: relative;
+	right: 40px;
+	color: #C0CA8F;
+	cursor: pointer;
+}
+#unique span,div{
+	display: inline-block;
+}
+@media all and (max-width: 768px){
+	.nav-bar{
+		flex-wrap: wrap;
+	}
+	.nav-bar .search, .falling-menu{
+		justify-content: space-around;
+	}
+	.site-title{
+		order: 1;
+	}
+	.reg-log-wrapper{
+		order:2;
+	}
+	#unique{
+		display: inline-block;
+		order:3;
+		margin-left: 20px;
+	}
+
+}
+@media all and (max-width: 640px){
+	.motto h1{
+		display: none;
+	}
+}
+@media all and (max-width: 460px){
+	.falling-menu{
+		display: none;
+	}
+	.search{
+		justify-content: center;
+	}
+}
+*{
+	margin:0;
+	padding: 0;
+}
+
+
